@@ -8,12 +8,14 @@
   Open the console to see output
   <script>
     const doSomethingAsync = (callback) => {
-      setTimeout(callback, 2000);
+      setTimeout(callback, 2000); //Gonna call this function in 200 ms
+    
     }
 
     doSomethingAsync(() => {
       alert('This happens after 2 seconds');
     });
+    console.log('Hello World'); //Can happen out of order
   </script>
 </body>
 
